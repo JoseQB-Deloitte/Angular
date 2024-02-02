@@ -1,0 +1,30 @@
+<div>
+    <h2>Students By Projects</h2>
+    
+    <div>
+        <label for="studentSelect">Select Student:</label>
+        <select id="studentSelect" [(ngModel)]="selectedStudentId">
+            <option *ngFor="let student of students" [value]="student.id">{{ student.name }}</option>
+        </select>
+    </div>
+    
+    <div>
+        <label for="projectSelect">Select Project:</label>
+        <select id="projectSelect" [(ngModel)]="selectedProjectId">
+            <option *ngFor="let project of projects" [value]="project.id">{{ project.title }}</option>
+        </select>
+    </div>
+    
+    <div>
+        <button (click)="registerStudentToProject()">Register</button>
+    </div>
+  
+    <div>
+        <h3>Existing Relationships</h3>
+        <ul>
+            <li *ngFor="let relation of existingRelations">
+                {{ relation.studentName }} - {{ relation.projectTitle }}
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,152 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Ana",
+      "age": 20
+    },
+    {
+      "id": "2",
+      "name": "Edith",
+      "age": 22
+    },
+    {
+      "id": "3",
+      "name": "José",
+      "age": 27
+    },
+    {
+      "id": "4",
+      "name": "Jorge",
+      "age": 33
+    },
+    {
+      "id": "5",
+      "name": "Jaime",
+      "age": 33
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "name": "Logic",
+      "credits": 4
+    },
+    {
+      "id": "2",
+      "name": "History",
+      "credits": 4
+    },
+    {
+      "id": "3",
+      "name": "Spanish",
+      "credits": 5
+    },
+    {
+      "id": "4",
+      "name": "Geometry",
+      "credits": 5
+    },
+    {
+      "id": "5",
+      "name": "English",
+      "credits": 30
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "Project A",
+      "description": "Description A"
+    },
+    {
+      "id": "2",
+      "title": "Project B",
+      "description": "Description B"
+    },
+    {
+      "id": "3",
+      "title": "Project C",
+      "description": "Description C"
+    },
+    {
+      "id": "4",
+      "title": "Project D",
+      "description": "Description D"
+    }
+  ],
+  "studentsByCourses": [
+    {
+      "id": "8954",
+      "studentId": "1",
+      "courseId": "1"
+    },
+    {
+      "id": "2b2d",
+      "studentId": "2",
+      "courseId": "1"
+    },
+    {
+      "id": "4c7a",
+      "studentId": "4",
+      "courseId": "3"
+    },
+    {
+      "id": "85e0",
+      "studentId": "2",
+      "courseId": "4"
+    },
+    {
+      "id": "2cbe",
+      "studentId": "5",
+      "courseId": "4"
+    },
+    {
+      "id": "2bfd",
+      "studentId": "3",
+      "courseId": "1"
+    },
+    {
+      "id": "e92c",
+      "studentId": "1",
+      "courseId": "4"
+    },
+    {
+      "id": "8278",
+      "studentId": "2",
+      "courseId": "5"
+    }
+  ],
+  "studentsByProjects": [
+    {
+      "id": "1fde",
+      "studentId": "1",
+      "projectId": "3"
+    },
+    {
+      "id": "1aaf",
+      "studentId": "1",
+      "projectId": "2"
+    },
+    {
+      "id": "365c",
+      "studentId": "4",
+      "projectId": "3"
+    },
+    {
+      "id": "1322",
+      "studentId": "4",
+      "projectId": "4"
+    },
+    {
+      "id": "b589",
+      "studentId": "5",
+      "projectId": "3"
+    },
+    {
+      "id": "b490",
+      "studentId": "3",
+      "projectId": "4"
+    }
+  ]
+}

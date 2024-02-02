@@ -1,0 +1,26 @@
+<div>
+  <h2>Students</h2>
+  
+  <!-- Formulario para registrar un estudiante -->
+  <form #studentForm="ngForm">
+    <div>
+      <label for="studentName">Name:</label>
+      <input type="text" id="studentName" name="studentName" [(ngModel)]="newStudentName" />
+    </div>
+
+    <div>
+      <label for="studentAge">Age:</label>
+      <input type="number" id="studentAge" name="studentAge" [(ngModel)]="newStudentAge" />
+    </div>
+
+    <button (click)="registerStudent()">Register Student</button>
+    <button type="button" (click)="clearInputFields()">Clear</button>
+  </form>
+
+  <!-- Lista de estudiantes registrados -->
+  <ul>
+    <li *ngFor="let student of studentsList">
+      <span (click)="loadStudentDetails(student)">{{ student.name }}</span> (ID: {{ student.id }}, Age: {{ student.age }})
+    </li>
+  </ul>
+</div>

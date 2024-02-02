@@ -1,0 +1,45 @@
+<div>
+  <h2>Projects</h2>
+
+  <!-- Formulario para registrar un proyecto -->
+  <form #projectForm="ngForm">
+    <div>
+      <label for="projectTitle">Title:</label>
+      <input type="text" id="projectTitle" name="projectTitle" [(ngModel)]="newProjectTitle" />
+    </div>
+
+    <div>
+      <label for="projectDescription">Description:</label>
+      <input type="text" id="projectDescription" name="projectDescription" [(ngModel)]="newProjectDescription" />
+    </div>
+
+    <button (click)="registerProject()">Register Project</button>
+    <button type="button" (click)="clearInputFields()">Clear</button>
+  </form>
+
+  <!-- Lista de proyectos registrados -->
+  <ul>
+    <li *ngFor="let project of projectsList">
+      <span (click)="loadProjectDetails(project)">{{ project.title }}</span> (ID: {{ project.id }}, Description: {{ project.description }})
+    </li>
+  </ul>
+
+  <!-- Detalles del proyecto seleccionado -->
+  <div *ngIf="selectedProject">
+    <h3>Edit Project</h3>
+    <form #editProjectForm="ngForm">
+      <div>
+        <label for="editProjectTitle">Title:</label>
+        <input type="text" id="editProjectTitle" name="editProjectTitle" [(ngModel)]="selectedProject.title" />
+      </div>
+
+      <div>
+        <label for="editProjectDescription">Description:</label>
+        <input type="text" id="editProjectDescription" name="editProjectDescription" [(ngModel)]="selectedProject.description" />
+      </div>
+
+      <button (click)="updateProject()">Update Project</button>
+      <button type="button" (click)="clearInputFields()">Cancel</button>
+    </form>
+  </div>
+</div>

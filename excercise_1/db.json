@@ -1,0 +1,113 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Ana",
+      "age": 20
+    },
+    {
+      "id": "2",
+      "name": "Edith",
+      "age": 22
+    },
+    {
+      "id": "3",
+      "name": "Juan",
+      "age": 18
+    },
+    {
+      "id": "4",
+      "name": "Jorge",
+      "age": 33
+    },
+    {
+      "id": "5",
+      "name": "Jaime",
+      "age": 33
+    },
+    {
+      "id": "6",
+      "name": "Cindy",
+      "age": 18
+    },
+    {
+      "id": "7",
+      "name": "José",
+      "age": 27
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "name": "Math",
+      "credits": 4
+    },
+    {
+      "id": "2",
+      "name": "History",
+      "credits": 4
+    },
+    {
+      "id": "3",
+      "name": "Spanish",
+      "credits": 5
+    },
+    {
+      "id": "4",
+      "name": "Geometry",
+      "credits": 5
+    },
+    {
+      "id": "5",
+      "name": "English",
+      "credits": 30
+    },
+    {
+      "id": "6",
+      "name": "Latin",
+      "credits": 10
+    },
+    {
+      "id": "7",
+      "name": "Logic",
+      "credits": 7
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "Project A",
+      "description": "Description A"
+    },
+    {
+      "id": "2",
+      "title": "Project B",
+      "description": "Description B"
+    },
+    {
+      "id": "3",
+      "title": "Project C",
+      "description": "Description C"
+    },
+    {
+      "id": "4",
+      "title": "Project D",
+      "description": "Description D"
+    },
+    {
+      "id": "5",
+      "title": "Project E",
+      "description": "Description E"
+    },
+    {
+      "id": "6",
+      "title": "Project F",
+      "description": "Description F"
+    },
+    {
+      "id": "7",
+      "title": "Exercise",
+      "description": "1"
+    }
+  ]
+}

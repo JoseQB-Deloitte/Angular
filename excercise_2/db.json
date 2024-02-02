@@ -1,0 +1,78 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Ana",
+      "age": 20
+    },
+    {
+      "id": "2",
+      "name": "Edith",
+      "age": 22
+    },
+    {
+      "id": "3",
+      "name": "José",
+      "age": 27
+    },
+    {
+      "id": "4",
+      "name": "Jorge",
+      "age": 33
+    },
+    {
+      "id": "5",
+      "name": "Brenda",
+      "age": 28
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "name": "Math",
+      "credits": 4
+    },
+    {
+      "id": "2",
+      "name": "Italian",
+      "credits": 4
+    },
+    {
+      "id": "3",
+      "name": "Spanish",
+      "credits": 5
+    },
+    {
+      "id": "4",
+      "name": "Geometry",
+      "credits": 5
+    },
+    {
+      "id": "5",
+      "name": "English",
+      "credits": 30
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "Project A",
+      "description": "Description A"
+    },
+    {
+      "id": "2",
+      "title": "Project B",
+      "description": "Description B"
+    },
+    {
+      "id": "3",
+      "title": "Project C",
+      "description": "Description C"
+    },
+    {
+      "id": "4",
+      "title": "Project D",
+      "description": "Description D"
+    }
+  ]
+}

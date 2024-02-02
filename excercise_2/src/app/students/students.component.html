@@ -1,0 +1,45 @@
+<div>
+  <h2>Students</h2>
+
+  <!-- Formulario para registrar un estudiante -->
+  <form #studentForm="ngForm">
+    <div>
+      <label for="studentName">Name:</label>
+      <input type="text" id="studentName" name="studentName" [(ngModel)]="newStudentName" />
+    </div>
+
+    <div>
+      <label for="studentAge">Age:</label>
+      <input type="number" id="studentAge" name="studentAge" [(ngModel)]="newStudentAge" />
+    </div>
+
+    <button (click)="registerStudent()">Register Student</button>
+    <button type="button" (click)="clearInputFields()">Clear</button>
+  </form>
+
+  <!-- Lista de estudiantes registrados -->
+  <ul>
+    <li *ngFor="let student of studentsList">
+      <span (click)="loadStudentDetails(student)">{{ student.name }}</span> (ID: {{ student.id }}, Age: {{ student.age }})
+    </li>
+  </ul>
+
+  <!-- Detalles del estudiante seleccionado -->
+  <div *ngIf="selectedStudent">
+    <h3>Edit Student</h3>
+    <form #editStudentForm="ngForm">
+      <div>
+        <label for="editStudentName">Name:</label>
+        <input type="text" id="editStudentName" name="editStudentName" [(ngModel)]="selectedStudent.name" />
+      </div>
+
+      <div>
+        <label for="editStudentAge">Age:</label>
+        <input type="number" id="editStudentAge" name="editStudentAge" [(ngModel)]="selectedStudent.age" />
+      </div>
+
+      <button (click)="updateStudent()">Update</button>
+      <button type="button" (click)="clearInputFields()">Cancel</button>
+    </form>
+  </div>
+</div>

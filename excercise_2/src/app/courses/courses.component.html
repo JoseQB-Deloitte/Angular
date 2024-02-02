@@ -1,0 +1,45 @@
+<div>
+  <h2>Courses</h2>
+
+  <!-- Formulario para registrar un curso -->
+  <form #courseForm="ngForm">
+    <div>
+      <label for="courseName">Name:</label>
+      <input type="text" id="courseName" name="courseName" [(ngModel)]="newCourseName" />
+    </div>
+
+    <div>
+      <label for="courseCredits">Credits:</label>
+      <input type="number" id="courseCredits" name="courseCredits" [(ngModel)]="newCourseCredits" />
+    </div>
+
+    <button (click)="registerCourse()">Register Course</button>
+    <button type="button" (click)="clearInputFields()">Clear</button>
+  </form>
+
+  <!-- Lista de cursos registrados -->
+  <ul>
+    <li *ngFor="let course of coursesList">
+      <span (click)="loadCourseDetails(course)">{{ course.name }}</span> (ID: {{ course.id }}, Credits: {{ course.credits }})
+    </li>
+  </ul>
+
+  <!-- Detalles del curso seleccionado -->
+  <div *ngIf="selectedCourse">
+    <h3>Edit Course</h3>
+    <form #editCourseForm="ngForm">
+      <div>
+        <label for="editCourseName">Name:</label>
+        <input type="text" id="editCourseName" name="editCourseName" [(ngModel)]="selectedCourse.name" />
+      </div>
+
+      <div>
+        <label for="editCourseCredits">Credits:</label>
+        <input type="number" id="editCourseCredits" name="editCourseCredits" [(ngModel)]="selectedCourse.credits" />
+      </div>
+
+      <button (click)="updateCourse()">Update Course</button>
+      <button type="button" (click)="clearInputFields()">Cancel</button>
+    </form>
+  </div>
+</div>
